@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "dri_tim.h": "c",
+        "int_tb6612.h": "c",
+        "stm32f10x.h": "c"
+    }
+}

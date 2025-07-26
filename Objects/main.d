@@ -1,0 +1,13 @@
+.\objects\main.o: User\main.c
+.\objects\main.o: User\main.h
+.\objects\main.o: .\Mid\FreeRTOS\include\FreeRTOS.h
+.\objects\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: .\Mid\FreeRTOS\FreeRTOSConfig.h
+.\objects\main.o: .\Mid\FreeRTOS\include\projdefs.h
+.\objects\main.o: .\Mid\FreeRTOS\include\portable.h
+.\objects\main.o: .\Mid\FreeRTOS\include\deprecated_definitions.h
+.\objects\main.o: .\Mid\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h
+.\objects\main.o: .\Mid\FreeRTOS\include\mpu_wrappers.h
+.\objects\main.o: .\Mid\FreeRTOS\include\Task.h
+.\objects\main.o: .\Mid\FreeRTOS\include\list.h
