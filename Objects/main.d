@@ -11,3 +11,8 @@
 .\objects\main.o: .\Mid\FreeRTOS\include\mpu_wrappers.h
 .\objects\main.o: .\Mid\FreeRTOS\include\Task.h
 .\objects\main.o: .\Mid\FreeRTOS\include\list.h
+.\objects\main.o: .\Int\Int_TB6612.h
+.\objects\main.o: .\Dri\Dri_TIM.h
+.\objects\main.o: .\start\stm32f10x.h
+.\objects\main.o: .\start\core_cm3.h
+.\objects\main.o: .\start\system_stm32f10x.h

@@ -3,6 +3,8 @@
 ".\objects\startup_stm32f10x_md.o"
 ".\objects\system_stm32f10x.o"
 ".\objects\main.o"
+".\objects\int_tb6612.o"
+".\objects\dri_tim.o"
 ".\objects\croutine.o"
 ".\objects\event_groups.o"
 ".\objects\list.o"
