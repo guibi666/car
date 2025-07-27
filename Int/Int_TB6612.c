@@ -3,7 +3,7 @@
 void Int_TB6612_Init(void)
 {
     /*初始化定时器*/
-    Dri_TIM_Init();
+    Dri_TIM4_Init();
 
     /*初始化GPIO,推挽输出*/
     GPIOB->CRH |= (GPIO_CRH_MODE12 |GPIO_CRH_MODE13 | GPIO_CRH_MODE14 | GPIO_CRH_MODE15);
