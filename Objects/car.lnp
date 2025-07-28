@@ -6,6 +6,7 @@
 ".\objects\int_tb6612.o"
 ".\objects\int_encoder.o"
 ".\objects\dri_tim.o"
+".\objects\dri_usart1.o"
 ".\objects\croutine.o"
 ".\objects\event_groups.o"
 ".\objects\list.o"

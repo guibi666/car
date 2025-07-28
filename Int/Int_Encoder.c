@@ -16,11 +16,14 @@ int16_t Int_Encoder_ReadCount(uint8_t timx)
     case 2:
         /*读取定时器计数值*/
         encoder_value = (uint16_t)TIM2->CNT;
+        TIM2->CNT = 0;
         break;
     
     case 3:
     /*读取定时器计数值*/
     encoder_value = (uint16_t)TIM3->CNT;
+    encoder_value = - encoder_value;
+    TIM3->CNT = 0;
     break;
 
     default:

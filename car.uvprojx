@@ -448,6 +448,11 @@
               <FileType>1</FileType>
               <FilePath>.\Dri\Dri_TIM.c</FilePath>
             </File>
+            <File>
+              <FileName>Dri_Usart1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Dri\Dri_Usart1.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

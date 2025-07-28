@@ -3,6 +3,7 @@
         "dri_tim.h": "c",
         "int_tb6612.h": "c",
         "stm32f10x.h": "c",
-        "int_encoder.h": "c"
+        "int_encoder.h": "c",
+        "dri_usart1.h": "c"
     }
 }
