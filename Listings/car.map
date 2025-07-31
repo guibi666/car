@@ -26,6 +26,29 @@ Section Cross References
     int_tb6612.o(i.Int_TB6612_SetPWM) refers to int_tb6612.o(i.Int_TB6612_MortorB) for Int_TB6612_MortorB
     int_encoder.o(i.Int_Encoder_Init) refers to dri_tim.o(i.Dri_TIM2_Init) for Dri_TIM2_Init
     int_encoder.o(i.Int_Encoder_Init) refers to dri_tim.o(i.Dri_TIM3_Init) for Dri_TIM3_Init
+    int_mpu6050.o(i.Int_MPU6050_Init) refers to dri_i2c.o(i.Dri_I2C2_Init) for Dri_I2C2_Init
+    int_mpu6050.o(i.Int_MPU6050_Init) refers to int_mpu6050.o(i.Int_MPU6050_WriteByte) for Int_MPU6050_WriteByte
+    int_mpu6050.o(i.Int_MPU6050_Init) refers to main.o(i.For_Delay_ms) for For_Delay_ms
+    int_mpu6050.o(i.Int_MPU6050_Init) refers to int_mpu6050.o(i.Int_MPU6050_ReadByte) for Int_MPU6050_ReadByte
+    int_mpu6050.o(i.Int_MPU6050_ReadByte) refers to dri_i2c.o(i.Dri_I2C2_Start) for Dri_I2C2_Start
+    int_mpu6050.o(i.Int_MPU6050_ReadByte) refers to dri_i2c.o(i.Dri_I2C_SendAddr) for Dri_I2C_SendAddr
+    int_mpu6050.o(i.Int_MPU6050_ReadByte) refers to dri_i2c.o(i.Dri_I2C2_NAck) for Dri_I2C2_NAck
+    int_mpu6050.o(i.Int_MPU6050_ReadByte) refers to dri_i2c.o(i.Dri_I2C2_Stop) for Dri_I2C2_Stop
+    int_mpu6050.o(i.Int_MPU6050_ReadByte) refers to dri_i2c.o(i.Dri_I2C_ReadByte) for Dri_I2C_ReadByte
+    int_mpu6050.o(i.Int_MPU6050_ReadBytes) refers to dri_i2c.o(i.Dri_I2C2_Start) for Dri_I2C2_Start
+    int_mpu6050.o(i.Int_MPU6050_ReadBytes) refers to dri_i2c.o(i.Dri_I2C_SendAddr) for Dri_I2C_SendAddr
+    int_mpu6050.o(i.Int_MPU6050_ReadBytes) refers to dri_i2c.o(i.Dri_I2C2_Ack) for Dri_I2C2_Ack
+    int_mpu6050.o(i.Int_MPU6050_ReadBytes) refers to dri_i2c.o(i.Dri_I2C2_NAck) for Dri_I2C2_NAck
+    int_mpu6050.o(i.Int_MPU6050_ReadBytes) refers to dri_i2c.o(i.Dri_I2C2_Stop) for Dri_I2C2_Stop
+    int_mpu6050.o(i.Int_MPU6050_ReadBytes) refers to dri_i2c.o(i.Dri_I2C_ReadByte) for Dri_I2C_ReadByte
+    int_mpu6050.o(i.Int_MPU6050_WriteByte) refers to dri_i2c.o(i.Dri_I2C2_Start) for Dri_I2C2_Start
+    int_mpu6050.o(i.Int_MPU6050_WriteByte) refers to dri_i2c.o(i.Dri_I2C_SendAddr) for Dri_I2C_SendAddr
+    int_mpu6050.o(i.Int_MPU6050_WriteByte) refers to dri_i2c.o(i.Dri_I2C_SendByte) for Dri_I2C_SendByte
+    int_mpu6050.o(i.Int_MPU6050_WriteByte) refers to dri_i2c.o(i.Dri_I2C2_Stop) for Dri_I2C2_Stop
+    int_mpu6050.o(i.Int_MPU6050_WriteBytes) refers to dri_i2c.o(i.Dri_I2C2_Start) for Dri_I2C2_Start
+    int_mpu6050.o(i.Int_MPU6050_WriteBytes) refers to dri_i2c.o(i.Dri_I2C_SendAddr) for Dri_I2C_SendAddr
+    int_mpu6050.o(i.Int_MPU6050_WriteBytes) refers to dri_i2c.o(i.Dri_I2C_SendByte) for Dri_I2C_SendByte
+    int_mpu6050.o(i.Int_MPU6050_WriteBytes) refers to dri_i2c.o(i.Dri_I2C2_Stop) for Dri_I2C2_Stop
     dri_usart1.o(i.fputc) refers to dri_usart1.o(i.Dri_USART1_SendChar) for Dri_USART1_SendChar
     event_groups.o(i.vEventGroupClearBitsCallback) refers to event_groups.o(i.xEventGroupClearBits) for xEventGroupClearBits
     event_groups.o(i.vEventGroupDelete) refers to tasks.o(i.vTaskSuspendAll) for vTaskSuspendAll
@@ -624,6 +647,19 @@ Removing Unused input sections from the image.
     Removing int_tb6612.o(i.Int_TB6612_MortorA), (84 bytes).
     Removing int_tb6612.o(i.Int_TB6612_MortorB), (84 bytes).
     Removing int_tb6612.o(i.Int_TB6612_SetPWM), (88 bytes).
+    Removing int_mpu6050.o(i.Int_MPU6050_Init), (72 bytes).
+    Removing int_mpu6050.o(i.Int_MPU6050_ReadByte), (50 bytes).
+    Removing int_mpu6050.o(i.Int_MPU6050_ReadBytes), (94 bytes).
+    Removing int_mpu6050.o(i.Int_MPU6050_WriteByte), (36 bytes).
+    Removing int_mpu6050.o(i.Int_MPU6050_WriteBytes), (54 bytes).
+    Removing dri_i2c.o(i.Dri_I2C2_Ack), (20 bytes).
+    Removing dri_i2c.o(i.Dri_I2C2_Init), (124 bytes).
+    Removing dri_i2c.o(i.Dri_I2C2_NAck), (20 bytes).
+    Removing dri_i2c.o(i.Dri_I2C2_Start), (52 bytes).
+    Removing dri_i2c.o(i.Dri_I2C2_Stop), (20 bytes).
+    Removing dri_i2c.o(i.Dri_I2C_ReadByte), (44 bytes).
+    Removing dri_i2c.o(i.Dri_I2C_SendAddr), (80 bytes).
+    Removing dri_i2c.o(i.Dri_I2C_SendByte), (72 bytes).
     Removing event_groups.o(i.prvTestWaitCondition), (30 bytes).
     Removing event_groups.o(i.vEventGroupClearBitsCallback), (16 bytes).
     Removing event_groups.o(i.vEventGroupDelete), (42 bytes).
@@ -752,7 +788,7 @@ Removing Unused input sections from the image.
     Removing cdrcmple.o(.text), (48 bytes).
     Removing depilogue.o(.text), (186 bytes).
 
-134 unused section(s) (total 28402 bytes) removed from the image.
+147 unused section(s) (total 29140 bytes) removed from the image.
 
 ==============================================================================
 
@@ -764,37 +800,37 @@ Image Symbol Table
 
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
@@ -802,9 +838,11 @@ Image Symbol Table
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    Dri\Dri_I2C.c                            0x00000000   Number         0  dri_i2c.o ABSOLUTE
     Dri\Dri_TIM.c                            0x00000000   Number         0  dri_tim.o ABSOLUTE
     Dri\Dri_Usart1.c                         0x00000000   Number         0  dri_usart1.o ABSOLUTE
     Int\Int_Encoder.c                        0x00000000   Number         0  int_encoder.o ABSOLUTE
+    Int\Int_MPU6050.c                        0x00000000   Number         0  int_mpu6050.o ABSOLUTE
     Int\Int_TB6612.c                         0x00000000   Number         0  int_tb6612.o ABSOLUTE
     Mid\FreeRTOS\portable\MemMang\heap_4.c   0x00000000   Number         0  heap_4.o ABSOLUTE
     Mid\FreeRTOS\portable\RVDS\ARM_CM3\port.c 0x00000000   Number         0  port.o ABSOLUTE
@@ -1061,56 +1099,56 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000000ec   Data   RO           19    RESET               startup_stm32f10x_md.o
-    0x080000ec   0x080000ec   0x00000000   Code   RO         1125  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080000ec   0x080000ec   0x00000004   Code   RO         1395    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080000f0   0x080000f0   0x00000004   Code   RO         1398    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080000f4   0x080000f4   0x00000000   Code   RO         1400    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080000f4   0x080000f4   0x00000000   Code   RO         1402    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080000f4   0x080000f4   0x00000008   Code   RO         1403    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080000fc   0x080000fc   0x00000000   Code   RO         1405    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x080000fc   0x080000fc   0x00000000   Code   RO         1407    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x080000fc   0x080000fc   0x00000004   Code   RO         1396    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x08000100   0x08000100   0x00000096   Code   RO          993    .emb_text           port.o
+    0x080000ec   0x080000ec   0x00000000   Code   RO         1233  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080000ec   0x080000ec   0x00000004   Code   RO         1503    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080000f0   0x080000f0   0x00000004   Code   RO         1506    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080000f4   0x080000f4   0x00000000   Code   RO         1508    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080000f4   0x080000f4   0x00000000   Code   RO         1510    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080000f4   0x080000f4   0x00000008   Code   RO         1511    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080000fc   0x080000fc   0x00000000   Code   RO         1513    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080000fc   0x080000fc   0x00000000   Code   RO         1515    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080000fc   0x080000fc   0x00000004   Code   RO         1504    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000100   0x08000100   0x00000096   Code   RO         1101    .emb_text           port.o
     0x08000196   0x08000196   0x00000002   PAD
     0x08000198   0x08000198   0x00000024   Code   RO           20    .text               startup_stm32f10x_md.o
-    0x080001bc   0x080001bc   0x0000002c   Code   RO         1410    .text               mc_w.l(uidiv.o)
-    0x080001e8   0x080001e8   0x00000024   Code   RO         1425    .text               mc_w.l(init.o)
-    0x0800020c   0x0800020c   0x000000d8   Code   RO          200    i.Dri_TIM2_Init     dri_tim.o
-    0x080002e4   0x080002e4   0x000000f4   Code   RO          201    i.Dri_TIM3_Init     dri_tim.o
-    0x080003d8   0x080003d8   0x00000114   Code   RO          202    i.Dri_TIM4_Init     dri_tim.o
-    0x080004ec   0x080004ec   0x000000ac   Code   RO          227    i.Dri_USART1_Init   dri_usart1.o
-    0x08000598   0x08000598   0x0000001c   Code   RO          228    i.Dri_USART1_SendChar  dri_usart1.o
+    0x080001bc   0x080001bc   0x0000002c   Code   RO         1518    .text               mc_w.l(uidiv.o)
+    0x080001e8   0x080001e8   0x00000024   Code   RO         1533    .text               mc_w.l(init.o)
+    0x0800020c   0x0800020c   0x000000d8   Code   RO          248    i.Dri_TIM2_Init     dri_tim.o
+    0x080002e4   0x080002e4   0x000000f4   Code   RO          249    i.Dri_TIM3_Init     dri_tim.o
+    0x080003d8   0x080003d8   0x00000114   Code   RO          250    i.Dri_TIM4_Init     dri_tim.o
+    0x080004ec   0x080004ec   0x000000ac   Code   RO          275    i.Dri_USART1_Init   dri_usart1.o
+    0x08000598   0x08000598   0x0000001c   Code   RO          276    i.Dri_USART1_SendChar  dri_usart1.o
     0x080005b4   0x080005b4   0x0000001c   Code   RO           65    i.For_Delay_ms      main.o
-    0x080005d0   0x080005d0   0x0000000c   Code   RO          179    i.Int_Encoder_Init  int_encoder.o
-    0x080005dc   0x080005dc   0x00000038   Code   RO          180    i.Int_Encoder_ReadCount  int_encoder.o
-    0x08000614   0x08000614   0x0000002c   Code   RO          146    i.Int_TB6612_Init   int_tb6612.o
+    0x080005d0   0x080005d0   0x0000000c   Code   RO          182    i.Int_Encoder_Init  int_encoder.o
+    0x080005dc   0x080005dc   0x00000038   Code   RO          183    i.Int_Encoder_ReadCount  int_encoder.o
+    0x08000614   0x08000614   0x0000002c   Code   RO          149    i.Int_TB6612_Init   int_tb6612.o
     0x08000640   0x08000640   0x00000008   Code   RO           24    i.SetSysClock       system_stm32f10x.o
     0x08000648   0x08000648   0x000000e0   Code   RO           25    i.SetSysClockTo72   system_stm32f10x.o
     0x08000728   0x08000728   0x00000010   Code   RO           66    i.SysTick_Handler   main.o
     0x08000738   0x08000738   0x00000060   Code   RO           27    i.SystemInit        system_stm32f10x.o
-    0x08000798   0x08000798   0x00000020   Code   RO         1179    i.__0printf$1       mc_w.l(printf1.o)
-    0x080007b8   0x080007b8   0x0000000e   Code   RO         1437    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080007c6   0x080007c6   0x00000002   Code   RO         1438    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080007c8   0x080007c8   0x0000000e   Code   RO         1439    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000798   0x08000798   0x00000020   Code   RO         1287    i.__0printf$1       mc_w.l(printf1.o)
+    0x080007b8   0x080007b8   0x0000000e   Code   RO         1545    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080007c6   0x080007c6   0x00000002   Code   RO         1546    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080007c8   0x080007c8   0x0000000e   Code   RO         1547    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080007d6   0x080007d6   0x00000002   PAD
-    0x080007d8   0x080007d8   0x00000154   Code   RO         1186    i._printf_core      mc_w.l(printf1.o)
-    0x0800092c   0x0800092c   0x00000010   Code   RO          229    i.fputc             dri_usart1.o
+    0x080007d8   0x080007d8   0x00000154   Code   RO         1294    i._printf_core      mc_w.l(printf1.o)
+    0x0800092c   0x0800092c   0x00000010   Code   RO          277    i.fputc             dri_usart1.o
     0x0800093c   0x0800093c   0x00000058   Code   RO           67    i.main              main.o
-    0x08000994   0x08000994   0x00000030   Code   RO          688    i.prvResetNextTaskUnblockTime  tasks.o
-    0x080009c4   0x080009c4   0x00000060   Code   RO          711    i.vTaskSwitchContext  tasks.o
-    0x08000a24   0x08000a24   0x00000034   Code   RO         1001    i.xPortSysTickHandler  port.o
-    0x08000a58   0x08000a58   0x00000020   Code   RO          721    i.xTaskGetSchedulerState  tasks.o
-    0x08000a78   0x08000a78   0x00000190   Code   RO          724    i.xTaskIncrementTick  tasks.o
-    0x08000c08   0x08000c08   0x00000020   Data   RO         1435    Region$$Table       anon$$obj.o
+    0x08000994   0x08000994   0x00000030   Code   RO          796    i.prvResetNextTaskUnblockTime  tasks.o
+    0x080009c4   0x080009c4   0x00000060   Code   RO          819    i.vTaskSwitchContext  tasks.o
+    0x08000a24   0x08000a24   0x00000034   Code   RO         1109    i.xPortSysTickHandler  port.o
+    0x08000a58   0x08000a58   0x00000020   Code   RO          829    i.xTaskGetSchedulerState  tasks.o
+    0x08000a78   0x08000a78   0x00000190   Code   RO          832    i.xTaskIncrementTick  tasks.o
+    0x08000c08   0x08000c08   0x00000020   Data   RO         1543    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000c28, Size: 0x00000728, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08000c28   0x00000040   Data   RW          729    .data               tasks.o
-    0x20000040   0x08000c68   0x00000004   Data   RW         1409    .data               mc_w.l(stdout.o)
-    0x20000044        -       0x000002e4   Zero   RW          728    .bss                tasks.o
+    0x20000000   0x08000c28   0x00000040   Data   RW          837    .data               tasks.o
+    0x20000040   0x08000c68   0x00000004   Data   RW         1517    .data               mc_w.l(stdout.o)
+    0x20000044        -       0x000002e4   Zero   RW          836    .bss                tasks.o
     0x20000328        -       0x00000400   Zero   RW           17    STACK               startup_stm32f10x_md.o
 
 

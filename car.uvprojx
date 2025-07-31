@@ -438,6 +438,11 @@
               <FileType>1</FileType>
               <FilePath>.\Int\Int_Encoder.c</FilePath>
             </File>
+            <File>
+              <FileName>Int_MPU6050.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Int\Int_MPU6050.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -452,6 +457,11 @@
               <FileName>Dri_Usart1.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Dri\Dri_Usart1.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dri_I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Dri\Dri_I2C.c</FilePath>
             </File>
           </Files>
         </Group>
