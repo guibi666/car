@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\start;.\User;.\Mid;.\Dri;.\Int;.\App;.\Mid\FreeRTOS\include;.\Mid\FreeRTOS\portable\MemMang;.\Mid\FreeRTOS\portable\RVDS\ARM_CM3;.\Mid\FreeRTOS\source;.\Mid\FreeRTOS</IncludePath>
+              <IncludePath>.\start;.\User;.\Mid;.\Dri;.\Int;.\App;.\Mid\FreeRTOS\include;.\Mid\FreeRTOS\portable\MemMang;.\Mid\FreeRTOS\portable\RVDS\ARM_CM3;.\Mid\FreeRTOS\source;.\Mid\FreeRTOS;.\Com</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -424,6 +424,13 @@
         </Group>
         <Group>
           <GroupName>Com</GroupName>
+          <Files>
+            <File>
+              <FileName>Com_Filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Com\Com_Filter.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Int</GroupName>
@@ -467,6 +474,13 @@
         </Group>
         <Group>
           <GroupName>App</GroupName>
+          <Files>
+            <File>
+              <FileName>App_Car.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App\App_Car.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Mid/FreeRTOS</GroupName>

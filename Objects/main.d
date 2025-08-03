@@ -19,3 +19,9 @@
 .\objects\main.o: .\Int\Int_Encoder.h
 .\objects\main.o: .\Dri\Dri_Usart1.h
 .\objects\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: .\Int\Int_MPU6050.h
+.\objects\main.o: .\Dri\Dri_I2C.h
+.\objects\main.o: .\App\App_Car.h
+.\objects\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: .\Com\Com_Filter.h
+.\objects\main.o: .\Dri\Dri_Usart1.h

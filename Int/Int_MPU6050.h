@@ -72,5 +72,10 @@
 #define MPU_FIFO_RW_REG         0X74    //FIFO读写寄存器
 #define MPU_DEVICE_ID_REG       0X75    //器件ID寄存器
 
+void Int_MPU6050_Init(void);
+
+void Int_MPU6050_Get_Gyro(short *gx, short *gy, short *gz);
+
+void Int_MPU6050_Get_Accel(short *ax, short *ay, short *az);
 
 #endif

@@ -1,0 +1,13 @@
+.\objects\app_car.o: App\App_Car.c
+.\objects\app_car.o: App\App_Car.h
+.\objects\app_car.o: .\Int\Int_MPU6050.h
+.\objects\app_car.o: .\Dri\Dri_I2C.h
+.\objects\app_car.o: .\start\stm32f10x.h
+.\objects\app_car.o: .\start\core_cm3.h
+.\objects\app_car.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_car.o: .\start\system_stm32f10x.h
+.\objects\app_car.o: .\User\main.h
+.\objects\app_car.o: D:\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\app_car.o: .\Com\Com_Filter.h
+.\objects\app_car.o: .\Dri\Dri_Usart1.h
+.\objects\app_car.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h

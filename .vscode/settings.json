@@ -6,6 +6,9 @@
         "int_encoder.h": "c",
         "dri_usart1.h": "c",
         "dri_i2c.h": "c",
-        "int_mpu6050.h": "c"
+        "int_mpu6050.h": "c",
+        "com_filter.h": "c",
+        "app_car.h": "c",
+        "main.h": "c"
     }
 }
