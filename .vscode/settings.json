@@ -9,6 +9,11 @@
         "int_mpu6050.h": "c",
         "com_filter.h": "c",
         "app_car.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "dri_adc.h": "c",
+        "dri_spi.h": "c",
+        "oled.h": "c",
+        "stdlib.h": "c",
+        "oledfont.h": "c"
     }
 }

@@ -133,7 +133,7 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
+            <Capability>1</Capability>
             <DriverSelection>-1</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
@@ -184,6 +184,9 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
+            <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
+            <nBranchProt>0</nBranchProt>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -324,6 +327,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -336,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\start;.\User;.\Mid;.\Dri;.\Int;.\App;.\Mid\FreeRTOS\include;.\Mid\FreeRTOS\portable\MemMang;.\Mid\FreeRTOS\portable\RVDS\ARM_CM3;.\Mid\FreeRTOS\source;.\Mid\FreeRTOS;.\Com</IncludePath>
+              <IncludePath>.\start;.\User;.\Mid;.\Dri;.\Int;.\App;.\Mid\FreeRTOS\include;.\Mid\FreeRTOS\portable\MemMang;.\Mid\FreeRTOS\portable\RVDS\ARM_CM3;.\Mid\FreeRTOS\source;.\Mid\FreeRTOS;.\Com;.\Int\OLED</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -349,7 +353,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
+            <ClangAsOpt>4</ClangAsOpt>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -450,6 +454,11 @@
               <FileType>1</FileType>
               <FilePath>.\Int\Int_MPU6050.c</FilePath>
             </File>
+            <File>
+              <FileName>oled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Int\OLED\oled.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -469,6 +478,16 @@
               <FileName>Dri_I2C.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Dri\Dri_I2C.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dri_ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Dri\Dri_ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dri_SPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Dri\Dri_SPI.c</FilePath>
             </File>
           </Files>
         </Group>

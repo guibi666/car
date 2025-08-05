@@ -25,3 +25,7 @@
 .\objects\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\main.o: .\Com\Com_Filter.h
 .\objects\main.o: .\Dri\Dri_Usart1.h
+.\objects\main.o: .\Dri\Dri_ADC.h
+.\objects\main.o: .\Int\OLED\oled.h
+.\objects\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: .\Dri\Dri_SPI.h
